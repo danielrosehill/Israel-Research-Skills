@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "israel-research",
+  "version": "0.1.0",
+  "description": "Israel-specific research and know-how skills: rights and entitlements on Kol Zchut, Home Front Command guidelines, NSC travel warnings, medicines in the Israeli system, which office handles what, phone-number quirks, Shabbat-relative opening hours, salary conversion, and shopping (fair-price checks against Zap and international RRP, personal-import VAT, plug and voltage compatibility, white-label brands). Instruction-only, using web search and fetch; works in Claude and ChatGPT.",
+  "author": {
+    "name": "Daniel Rosehill",
+    "url": "https://github.com/danielrosehill"
+  },
+  "repository": "https://github.com/danielrosehill/Israel-Research-Skills",
+  "license": "MIT",
+  "keywords": ["israel", "kol-zchut", "rights", "bituach-leumi", "pikud-haoref", "home-front-command", "travel-warnings", "medications", "shopping", "zap", "vat", "customs", "hebrew", "olim"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Israel Research",
+        "shortDescription": "Rights, offices, prices and know-how for life in Israel",
+        "developerName": "Daniel Rosehill",
+        "category": "Lifestyle",
+        "capabilities": ["Read"],
+        "defaultPrompt": [
+          "What are my rights to severance pay if I resign?",
+          "Is ₪1,299 a fair price in Israel for a Logitech MX Master 3S?"
+        ]
+      }
+    }
+  }
+}
